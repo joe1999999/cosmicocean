@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Cosmic Ocean Blog</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Cosmic Ocean Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© 2024, Soukkou.Y</copyright>
+    <lastBuildDate>Fri, 06 Dec 2024 23:02:51 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Expirements With Psychoactive Drugs</title>
+      <link>http://localhost:1313/posts/my-expirements-with-psychoactive-drugs/</link>
+      <pubDate>Fri, 06 Dec 2024 23:02:51 +0100</pubDate>
+      <guid>http://localhost:1313/posts/my-expirements-with-psychoactive-drugs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction to Brain-Computer Interfaces</title>
+      <link>http://localhost:1313/posts/brain-machine-interfaces/</link>
+      <pubDate>Wed, 27 Nov 2024 15:47:02 +0100</pubDate>
+      <guid>http://localhost:1313/posts/brain-machine-interfaces/</guid>
+      <description>&lt;figure &gt;&#xA;    &lt;audio controls preload=&#34;metadata&#34;&gt;&#xA;      &lt;source src=&#34;http://localhost:1313/transcripts/luvvoicecom-20241206-88xm7b_Ah2bwO5C.mp3&#34; type=&#34;audio/mpeg&#34;&gt;&#xA;    &lt;/audio&gt;&#xA;    &lt;figcaption&gt;Listen to audio version&lt;/figcaption&gt;&#xA;  &lt;/figure&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Brain-Computer Interfaces (BCIs), or sometimes called &amp;ldquo;Brain-Machine Interfaces (BMIs)&amp;rdquo; are a relatively new concieved piece of technology that integrate the huge advances made in the last 2 decades or so in computer hardware (GPUs), computer software (Deep Neural Networks) as well as advances in material science and automated neurosurgery. BCIs aim to revolutionize human interactions with each other as well as interfacing with In-Silico hardware to enhance human cognitive abilities or to restore lost functions (eyesight, hearing in pathologies such as amyotrophic lateral sclerosis, cerebral palsy, stroke, or spinal cord injury&amp;hellip; etc).&#xA;BCIs capture brain signals from neurones in a particular region or regions (e.g Motor cortex) of the brain where they&amp;rsquo;re implanted and learn through neural networks the specific electrical neural firing patterns of each brain activity whether it&amp;rsquo;s a thought or an action. The broader goal of these devices is to amplify the human brain&amp;rsquo;s output bandwidth.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

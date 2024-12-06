@@ -1,0 +1,27 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "Cosmic Ocean Blog"
+theme='paper'
+
+author = "Soukkou Youcef"
+copyright = "© 2024, Soukkou.Y"
+paginate = 5
+
+[params]
+  # color style
+  color = 'linen'                           # linen, wheat, gray, light
+  subtitle = 'Welcome to my personal blog'
+
+  # header social icons
+  twitter = 'DR2193199183354'               
+  github = 'Joe1999999'                
+  mastodon = 'https://mastodon.social/@joe1999'   
+  avatar = 'https://i.imgur.com/wiZBMCj.jpeg'
+  name = 'Dr. Soukkou Youcef'
+  bio = 'A Medical Doctor With Interests in Astronomy, Economics and Technology'
+  math = true     
+  favicon = "favicon.ico"  
+[params.contact]
+  email = 'soukkouyoucef@gmail.com'  
+
+

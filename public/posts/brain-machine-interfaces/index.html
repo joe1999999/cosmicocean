@@ -1,0 +1,408 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="en-us"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Introduction to Brain-Computer Interfaces - Cosmic Ocean Blog</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="
+    
+      
+    
+    Listen to audio version
+  
+Introduction
+Brain-Computer Interfaces (BCIs), or sometimes called &ldquo;Brain-Machine Interfaces (BMIs)&rdquo; are a relatively new concieved piece of technology that integrate the huge advances made in the last 2 decades or so in computer hardware (GPUs), computer software (Deep Neural Networks) as well as advances in material science and automated neurosurgery. BCIs aim to revolutionize human interactions with each other as well as interfacing with In-Silico hardware to enhance human cognitive abilities or to restore lost functions (eyesight, hearing in pathologies such as amyotrophic lateral sclerosis, cerebral palsy, stroke, or spinal cord injury&hellip; etc).
+BCIs capture brain signals from neurones in a particular region or regions (e.g Motor cortex) of the brain where they&rsquo;re implanted and learn through neural networks the specific electrical neural firing patterns of each brain activity whether it&rsquo;s a thought or an action. The broader goal of these devices is to amplify the human brain&rsquo;s output bandwidth." />
+  <meta name="author" content="Dr Soukkou Youcef" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://i.imgur.com/wiZBMCj.jpeg" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/mastodon.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+  
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:1313/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.139.3">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="http://localhost:1313/"
+      >Cosmic Ocean Blog</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+    >
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/DR2193199183354"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/Joe1999999"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./mastodon.svg)"
+        href="https://mastodon.social/@joe1999"
+        target="_blank"
+        rel="me"
+      >
+        mastodon
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">Introduction to Brain-Computer Interfaces</h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>Nov 27, 2024</time>
+      
+      
+      
+      
+      <span class="mx-1">&middot;</span>
+      <span>Dr Soukkou Youcef</span>
+      
+    </div>
+    
+  </header>
+
+  <section><figure >
+    <audio controls preload="metadata">
+      <source src="/transcripts/luvvoicecom-20241206-88xm7b_Ah2bwO5C.mp3" type="audio/mpeg">
+    </audio>
+    <figcaption>Listen to audio version</figcaption>
+  </figure>
+<h2 id="introduction">Introduction</h2>
+<p>Brain-Computer Interfaces (BCIs), or sometimes called &ldquo;Brain-Machine Interfaces (BMIs)&rdquo; are a relatively new concieved piece of technology that integrate the huge advances made in the last 2 decades or so in computer hardware (GPUs), computer software (Deep Neural Networks) as well as advances in material science and automated neurosurgery. BCIs aim to revolutionize human interactions with each other as well as interfacing with In-Silico hardware to enhance human cognitive abilities or to restore lost functions (eyesight, hearing in pathologies such as amyotrophic lateral sclerosis, cerebral palsy, stroke, or spinal cord injury&hellip; etc).
+BCIs capture brain signals from neurones in a particular region or regions (e.g Motor cortex) of the brain where they&rsquo;re implanted and learn through neural networks the specific electrical neural firing patterns of each brain activity whether it&rsquo;s a thought or an action. The broader goal of these devices is to amplify the human brain&rsquo;s output bandwidth.</p>
+<h2 id="the-basics">The Basics</h2>
+<p>It&rsquo;s very hard to explain the idea of adding another digital layer of congnition to the biological structure that is the brain, the idea of &lsquo;interfacing&rsquo; with the cortex seems vague and almost &lsquo;science-fiction&rsquo; grade. But in truth, it has been done for so many years, the biggest issues aren&rsquo;t conceptual, they are practical, how do we make micro-electrodes that can capture unitary neurone activity without causing damage to nearby blood vessels, glia cells, and especially without provoking an immune reaction. Then how do we take all those signals and process them and give an output that is compatible with already existing brain circuits. These are the big challenges on a high level kind of thinking. If you look closely, you might just find the damn thing too complexe. I mean, we are dealing with engineering issues that intersect a wide range of different fields, immunology, material sciences, pathology, neurosurgery, signal processing, software engineering, and the list goes on and on.
+Below is a simplified diagram showing the elemental steps in a simple design and implementation of a BCI.
+<img src="https://www.researchgate.net/profile/Xiaorong-Gao/publication/227176331/figure/fig3/AS:667775211151379@1536221425653/Diagram-of-a-BCI-based-on-the-modulation-of-brain-rhythms.png" alt="alt"></p>
+<p>In the olden days, people used to record brain activity in an awkward way, using an EEG, which typically has 25 electrodes. As one might guess, this is largely insufficient when we comparatively look at the hundereds of billions of neurones operating in a vastly more complex network in 3D space. But luckily, in recent years, the use of neural laces became common. I still have this article from &lsquo;Nature&rsquo; in 2015 kept in my drawer somewhere talking about how a team of nano and neuroscientists created a flexible conductive mesh made of a polymer that they injected in the brain of a rat and were sucessfully able to record the activity of millions of neurones with much more than 25 electrodes. At the time reading this kind of stuff was like reading science fiction (Original Source: <a href="https://www.nature.com/articles/nmeth.3511">Injectable meshes for neural recordings
+. Nature 30 July 2015</a>
+)
+The mesh had transistors at the intersection of its lines which also had the same elasticity and flexibility as brain tissue. Therfore, eliminating the risk of losing neuron data when cells move with different blood flow conditions and other hemodynamic variabilities as well as mechanical changes. The team reported no pathological immune response even after 5 weeks of implanting the mesh.
+This was a huge milestone back then. Fast forward almost 10 years later, and we now have &lsquo;Neuralink&rsquo; a biotechnology company in silicon valley that successfully implemented BCIs in monkeys, allowing him to play the famous game &lsquo;pong&rsquo; without the need for a joystick. See the video below :
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/rsCul1sp4hQ?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+</p>
+<p>The team at neuralink are now in the phase of clinical trials, with their first ever patient &lsquo;Noland Arbaugh&rsquo; who is tetraplegic. Upon recieving a neuralink chip he was able to play &ldquo;Counter Strike&rdquo; on his computer just by using his own thoughts. The possibilities of integrating the brain signals of his neuralink are limitless, smart prostethic limbs, computers, smart devices, etc the sky is the limit after the chip increases how much bandwidth your brain can output at each second.
+And the examples of practical use are also endless, this was just one, being able to recover motor function after a spinal cord injury. The technology is so powerful, it can be used to cure peripheral blindness, where the neural lace acts as an artifical eye with its own optic nerve equivalent and sends electrical signals to the visual cortex in the same way a normal optic nerve does. Of course, it&rsquo;s not as simple or easy as it seems since the vision problem is a highly complex example of human physiology and anatomy and would require years of deciphering exactly how the eye and the visual cortex interface with each other in normal physiological conditions.</p>
+<h2 id="the-symbiosis">The Symbiosis</h2>
+<p>There are a bunch of fallacies that people always resort to when they know of this kind of technology. Mainly it either has to do with the ethical side of whether it is a dangerous thing to implement or the other side which is the technical impossibility of interfacing organic vs non-organic computers. I don&rsquo;t personally dable with the ethical bullshit, so i&rsquo;m goona try to address the technicals instead.
+The BMI does not have to adjust to the brain, its job in theory is relatively simple, capture elemental neurones firing and a region of the brain that we already know its function, try to learn from that data useful patterns using machine learning, and then do calculations to determine an output that then gets to be sent back to organic neural network since we have access to individial neurones. Thus, the problem of interfacing is not an issue, but rather, an illusion.
+It&rsquo;s much like neural networks. We haven&rsquo;t got a clue on how they work inside and out but know how the learning algorithm works, it&rsquo;s a blackbox that we can&rsquo;t predict yet we can understand in theory.
+I personally see no problem with adding the hard silicon layer to the brain, I can see a bright and incredible future for humans when BCIs become common. It&rsquo;s the only way I see our race competing with artificial super intelligence.</p>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  >
+    
+    <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/posts/my-expirements-with-psychoactive-drugs/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>My Expirements With Psychoactive Drugs</span></a
+    >
+    
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    © 2024, Soukkou.Y
+  
+  </div>
+  <a class="link mx-6" href="https://x.com/DR2193199183354" rel="noopener" target="_blank"
+    >Dr Soukkou Youcef</a
+  >️
+  <a
+    class="link"
+    href="https://en.wikipedia.org/wiki/Phencyclidine"
+    rel="noopener"
+    target="_blank"
+    >powered by angel dust</a
+  >
+</footer>
+
+  </body>
+</html>
